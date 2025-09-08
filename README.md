@@ -49,6 +49,7 @@ In your `pom.xml`, include:
 Then run:
 mvn clean install
 ```
+---
 
 3. Update ChromeDriver Path
 ```
@@ -58,6 +59,8 @@ System.setProperty("webdriver.chrome.driver", "D:\\path\\to\\chromedriver.exe");
 
 Or add ChromeDriver to your system PATH to avoid hardcoding.
 ```
+---
+
 4. Create credentials.csv
 
 Place this file in your project root folder:
@@ -67,10 +70,12 @@ wrongusername,wrongpassword
 ,
 
 ```
-###
+---
+
 5. Run the Project
 
-###
+---
+
 6. Test Cases
 ```
 ✅ Test Case 1: Valid Login
@@ -103,7 +108,8 @@ Reads multiple username/password combinations from credentials.csv.
 
 Logs Pass/Fail results for each combination.
 ```
-###
+---
+
 📌 Example Console Output
 ```
 Test Case 1 Passed: Valid Login successful
