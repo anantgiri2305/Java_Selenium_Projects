@@ -33,7 +33,7 @@ Checks:
 ## 📌 Project Structure
 Java_Selenium_Project/
 │── pom.xml # Maven project configuration
-│── src/main/java/LoginAuto.java # Main automation script
+│── src/main/java/org/example/LoginAuto.java # Main automation script
 │── credentials.csv # CSV file for data-driven testing
 │── README.md # Documentation
 
