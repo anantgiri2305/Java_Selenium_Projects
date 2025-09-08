@@ -19,17 +19,6 @@ Checks:
 - ChromeDriver
 - Maven
 
-## 📌 Setup Instructions
-1. Install Java JDK (23).
-2. Install Maven.
-3. Add Selenium dependency in `pom.xml`:
-   ```xml
-   <dependency>
-       <groupId>org.seleniumhq.selenium</groupId>
-       <artifactId>selenium-java</artifactId>
-       <version>4.34.0</version>
-   </dependency>
-
 ## 📌 Project Structure
 Java_Selenium_Project/
 │── pom.xml # Maven project configuration
@@ -62,14 +51,13 @@ mvn clean install
 ```
 
 3. Update ChromeDriver Path
-
+```
 Inside LoginAuto.java, update the path:
 
 System.setProperty("webdriver.chrome.driver", "D:\\path\\to\\chromedriver.exe");
 
-
 Or add ChromeDriver to your system PATH to avoid hardcoding.
-
+```
 4. Create credentials.csv
 
 Place this file in your project root folder:
@@ -79,11 +67,12 @@ wrongusername,wrongpassword
 ,
 
 ```
-
+###
 5. Run the Project
 
+###
 6. Test Cases
-
+```
 ✅ Test Case 1: Valid Login
 
 Username: tomsmith
@@ -108,13 +97,15 @@ Password: (empty)
 
 Expected: Error message displayed.
 
-✅ Bonus: CSV-Driven Login Tests
+✅ CSV-Driven Login Tests
 
 Reads multiple username/password combinations from credentials.csv.
 
 Logs Pass/Fail results for each combination.
-
+```
+###
 📌 Example Console Output
+```
 Test Case 1 Passed: Valid Login successful
 Test Case 2 Passed: Invalid Login error displayed
 Test Case 3 Passed: Empty fields error displayed
@@ -123,3 +114,4 @@ Test Case 3 Passed: Empty fields error displayed
 ✅ CSV Test Passed: (tomsmith, SuperSecretPassword!)
 ❌ CSV Test Failed: (wrongusername, wrongpassword)
 ❌ CSV Test Failed: (, )
+```
